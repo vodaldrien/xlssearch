@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\XLSController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('xls', [XLSController::class, 'index'])->name('xls.index');
+Route::post('xls', [XLSController::class, 'store'])->name('xls.upload');
+Route::delete('xls', [XLSController::class, 'delete'])->name('xls.delete');
+Route::post('xls/search', [XLSController::class, 'search'])->name('xls.search');
+
+
+Route::get('asd', function() {
+	return 'test';
 });
