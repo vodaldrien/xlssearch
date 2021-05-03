@@ -6,6 +6,8 @@
     <script src="{{ mix('js/xls.js') }}" defer></script>
 
     <link rel="stylesheet" href="{{ mix('css/xls.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
 </head>`
 <body>
     <input type="text" id="xls_search" placeholder="@lang('xls.search')"/>
